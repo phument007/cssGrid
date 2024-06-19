@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sok ly shop</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            width: 75%;
+            height: 50%;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            grid-column-gap: 10px;
+            padding: 10px;
+          
+        }
+        .content > .card {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .card > img{
+            width: 100%;
+        }
+        .content > .card:hover > .description {
+            bottom: 0px;
+        }
+        .card > .description {
+            width: 100%;
+            height: 65%;
+            position: relative;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.151);
+            bottom: -50px;
+            padding:10px ;
+            transition: 0.5s;
+           
+        }
+        .description > button {
+            width: 90%;
+            height: 30px;
+            position: absolute;
+            bottom: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(113, 113, 241);
+        }
+        .description > .price {
+            margin-top: 50px;
+            font-size: 30px;
+            color: rgb(241, 141, 243);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="card">
+            <img src="https://www.soklyphone.com/storage/Huawei/HUAWEI-Watch/HUAWEI-Band-9/pink-1714814962s4hHR.png" alt="">
+            <div class="description">
+                <div class="title">Hello</div>
+                <div class="price">500$</div>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.soklyphone.com/storage/Huawei/HUAWEI-Watch/HUAWEI-Band-9/pink-1714814962s4hHR.png" alt="">
+            <div class="description">
+                <div class="title">Hello</div>
+                <div class="price">500$</div>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.soklyphone.com/storage/Huawei/HUAWEI-Watch/HUAWEI-Band-9/pink-1714814962s4hHR.png" alt="">
+            <div class="description">
+                <div class="title">Hello</div>
+                <div class="price">500$</div>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.soklyphone.com/storage/Huawei/HUAWEI-Watch/HUAWEI-Band-9/pink-1714814962s4hHR.png" alt="">
+            <div class="description">
+                <div class="title">Hello</div>
+                <div class="price">500$</div>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.soklyphone.com/storage/Huawei/HUAWEI-Watch/HUAWEI-Band-9/pink-1714814962s4hHR.png" alt="">
+            <div class="description">
+                <div class="title">Hello</div>
+                <div class="price">500$</div>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.soklyphone.com/storage/Huawei/HUAWEI-Watch/HUAWEI-Band-9/pink-1714814962s4hHR.png" alt="">
+            <div class="description">
+                <div class="title">Hello</div>
+                <div class="price"></div>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
